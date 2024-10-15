@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/opencv_tools/opencv_tools.egg-info
+writing ../../build/opencv_tools/opencv_tools.egg-info/PKG-INFO
+writing dependency_links to ../../build/opencv_tools/opencv_tools.egg-info/dependency_links.txt
+writing entry points to ../../build/opencv_tools/opencv_tools.egg-info/entry_points.txt
+writing requirements to ../../build/opencv_tools/opencv_tools.egg-info/requires.txt
+writing top-level names to ../../build/opencv_tools/opencv_tools.egg-info/top_level.txt
+writing manifest file '../../build/opencv_tools/opencv_tools.egg-info/SOURCES.txt'
+reading manifest file '../../build/opencv_tools/opencv_tools.egg-info/SOURCES.txt'
+writing manifest file '../../build/opencv_tools/opencv_tools.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/build/lib/opencv_tools
+copying opencv_tools/__init__.py -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/build/lib/opencv_tools
+copying opencv_tools/SubscribeIMGNode.py -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/build/lib/opencv_tools
+copying opencv_tools/PublisherIMGNode.py -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/build/lib/opencv_tools
+running install
+running install_lib
+creating /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools
+copying /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/build/lib/opencv_tools/__init__.py -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools
+copying /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/build/lib/opencv_tools/SubscribeIMGNode.py -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools
+copying /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/build/lib/opencv_tools/PublisherIMGNode.py -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools
+byte-compiling /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools/SubscribeIMGNode.py to SubscribeIMGNode.cpython-310.pyc
+byte-compiling /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools/PublisherIMGNode.py to PublisherIMGNode.cpython-310.pyc
+running install_data
+creating /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/share/ament_index/resource_index/packages
+copying resource/opencv_tools -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/share/ament_index/resource_index/packages
+copying package.xml -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/share/opencv_tools
+running install_egg_info
+Copying ../../build/opencv_tools/opencv_tools.egg-info to /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/python3.10/site-packages/opencv_tools-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publisherIMG script to /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/opencv_tools
+Installing subscribeIMG script to /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/install/opencv_tools/lib/opencv_tools
+writing list of installed files to '/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/ros2Testing/build/opencv_tools/install.log'
