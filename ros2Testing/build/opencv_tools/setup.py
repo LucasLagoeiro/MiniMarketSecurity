@@ -1,1 +1,0 @@
-/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/src/opencv_tools/setup.py

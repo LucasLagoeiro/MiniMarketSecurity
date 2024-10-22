@@ -1,0 +1,48 @@
+[0.008s] Invoking command in '/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup': AMENT_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble CMAKE_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble /usr/bin/cmake /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.100s] -- The CXX compiler identification is GNU 11.4.0
+[0.105s] -- Detecting C compiler ABI info
+[0.184s] -- Detecting C compiler ABI info - done
+[0.190s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.190s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.264s] -- Detecting CXX compiler ABI info - done
+[0.270s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.271s] -- Detecting CXX compile features
+[0.271s] -- Detecting CXX compile features - done
+[0.273s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.393s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.442s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.510s] -- Configuring done
+[0.511s] -- Generating done
+[0.512s] -- Build files have been written to: /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup
+[0.515s] Invoked command in '/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup' returned '0': AMENT_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble CMAKE_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble /usr/bin/cmake /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup
+[0.517s] Invoking command in '/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup': AMENT_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble CMAKE_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble /usr/bin/cmake --build /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup -- -j20 -l20
+[0.550s] Invoked command in '/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup' returned '0': AMENT_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble CMAKE_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble /usr/bin/cmake --build /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup -- -j20 -l20
+[0.576s] Invoking command in '/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup': AMENT_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble CMAKE_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble /usr/bin/cmake --install /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup
+[0.581s] -- Install configuration: ""
+[0.581s] -- Execute custom install script
+[0.582s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup//launch/yolo-nas.launch.py
+[0.588s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup//launch/yolov10.launch.py
+[0.597s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup//launch/yolov11.launch.py
+[0.603s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup//launch/yolov5.launch.py
+[0.611s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup//launch/yolov8.launch.py
+[0.617s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup//launch/yolov8_3d.launch.py
+[0.625s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup//launch/yolov9.launch.py
+[0.632s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/ament_index/resource_index/package_run_dependencies/yolov8_bringup
+[0.641s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/ament_index/resource_index/parent_prefix_path/yolov8_bringup
+[0.651s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/environment/ament_prefix_path.sh
+[0.660s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/environment/ament_prefix_path.dsv
+[0.671s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/environment/path.sh
+[0.680s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/environment/path.dsv
+[0.690s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/local_setup.bash
+[0.698s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/local_setup.sh
+[0.705s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/local_setup.zsh
+[0.710s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/local_setup.dsv
+[0.717s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/package.dsv
+[0.726s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/ament_index/resource_index/packages/yolov8_bringup
+[0.733s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/cmake/yolov8_bringupConfig.cmake
+[0.740s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/cmake/yolov8_bringupConfig-version.cmake
+[0.748s] -- Symlinking: /home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup/share/yolov8_bringup/package.xml
+[0.757s] Invoked command in '/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup' returned '0': AMENT_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble CMAKE_PREFIX_PATH=/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_bringup:/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_ros:/home/robo/llagoeiro/MiniMarketSecurity/install/opencv_tools:/home/robo/llagoeiro/MiniMarketSecurity/ros2Testing/install/opencv_tools:/opt/ros/humble /usr/bin/cmake --install /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup
