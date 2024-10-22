@@ -19,6 +19,8 @@ class ImageSubscriber(Node):
   
   def __init__(self):
     super().__init__('image_subscriber')
+    self.goInside = False
+    self.inside = 0
     self.subscription = self.create_subscription(
       Image, 
       '/yolo/dbg_image', 
@@ -36,12 +38,21 @@ class ImageSubscriber(Node):
     verde = (0,255,0)
     cv2.line(current_frame,(160,0),(160,480),verde,3)
     cv2.line(current_frame,(200,0),(200,480),verde,3)
-    # cv2.imshow("camera", current_frame)
-    # cv2.waitKey(1)
+
+    if self.posX == 160: 
+      self.goInside = True
+    if self.posX == 200 and self.goInside: 
+      self.inside += 1
+      self.goInside = False
+
+    cv2.imshow("camera", current_frame)
+    cv2.waitKey(1)
 
   def listener_callback_personPos(self, msg):
     self.get_logger().info('Receiving person pos')
     self.get_logger().info(str(msg.detections[0].bbox.center.position.x)) 
+    self.posX = msg.detections[0].bbox.center.position.x
+    self.posY = msg.detections[0].bbox.center.position.y
    
 def main(args=None):
   rclpy.init(args=args)
