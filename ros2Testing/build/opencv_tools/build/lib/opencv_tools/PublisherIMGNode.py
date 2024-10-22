@@ -11,7 +11,7 @@ class ImagePublisher(Node):
     self.publisher_ = self.create_publisher(Image, 'image_raw', 10)
     timer_period = 0.1
     self.timer = self.create_timer(timer_period, self.timer_callback)
-    self.cap = cv2.VideoCapture(2)
+    self.cap = cv2.VideoCapture(4)
     self.br = CvBridge()
     
   def timer_callback(self):

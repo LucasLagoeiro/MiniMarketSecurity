@@ -1,0 +1,2 @@
+Invoking command in '/home/robo/llagoeiro/MiniMarketSecurity/ros2_yolo_ws/build/yolov8_msgs': /usr/bin/cmake /home/robo/llagoeiro/MiniMarketSecurity/ros2_yolo_ws/src/yolov8_ros/yolov8_msgs -DCMAKE_INSTALL_PREFIX=/home/robo/llagoeiro/MiniMarketSecurity/ros2_yolo_ws/install/yolov8_msgs
+Invoked command in '/home/robo/llagoeiro/MiniMarketSecurity/ros2_yolo_ws/build/yolov8_msgs' returned '1': /usr/bin/cmake /home/robo/llagoeiro/MiniMarketSecurity/ros2_yolo_ws/src/yolov8_ros/yolov8_msgs -DCMAKE_INSTALL_PREFIX=/home/robo/llagoeiro/MiniMarketSecurity/ros2_yolo_ws/install/yolov8_msgs

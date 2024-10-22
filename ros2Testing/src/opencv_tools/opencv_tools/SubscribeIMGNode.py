@@ -10,7 +10,7 @@ class ImageSubscriber(Node):
     super().__init__('image_subscriber')
     self.subscription = self.create_subscription(
       Image, 
-      '/yolo/dbg_image', 
+      '/image_raw', 
       self.listener_callback, 
       10)
     self.subscription # prevent unused variable warning
