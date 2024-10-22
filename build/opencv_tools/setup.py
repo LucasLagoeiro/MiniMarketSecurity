@@ -1,1 +1,1 @@
-/home/robo/llagoeiro/MiniMarketSecurity/src/opencv_tools/setup.py
+/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/opencv_tools/setup.py

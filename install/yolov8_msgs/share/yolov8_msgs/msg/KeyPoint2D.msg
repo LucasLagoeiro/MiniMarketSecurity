@@ -1,1 +1,1 @@
-/home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_msgs/msg/KeyPoint2D.msg
+/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_msgs/msg/KeyPoint2D.msg

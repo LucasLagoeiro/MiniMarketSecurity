@@ -36,12 +36,12 @@ class ImageSubscriber(Node):
     verde = (0,255,0)
     cv2.line(current_frame,(160,0),(160,480),verde,3)
     cv2.line(current_frame,(200,0),(200,480),verde,3)
-    cv2.imshow("camera", current_frame)
-    cv2.waitKey(1)
+    # cv2.imshow("camera", current_frame)
+    # cv2.waitKey(1)
 
   def listener_callback_personPos(self, msg):
     self.get_logger().info('Receiving person pos')
-    self.get_logger().info(str(msg.detections.bbox.center)) 
+    self.get_logger().info(str(msg.detections[0].bbox.center.position.x)) 
    
 def main(args=None):
   rclpy.init(args=args)

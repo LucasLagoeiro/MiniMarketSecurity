@@ -2,4 +2,3 @@
 publisherIMG = opencv_tools.PublisherIMGNode:main
 subscribeIMG = opencv_tools.SubscribeIMGNode:main
 subscribeYOLOIMG = opencv_tools.SubscribeIMGNodeYOLO:main
-

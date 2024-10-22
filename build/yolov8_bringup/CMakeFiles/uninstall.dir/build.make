@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_bringup
+CMAKE_SOURCE_DIR = /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup
+CMAKE_BINARY_DIR = /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_bringup
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_bringup /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_bringup /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_bringup /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_bringup /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_bringup /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_bringup /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

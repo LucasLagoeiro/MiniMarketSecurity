@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs
+CMAKE_BINARY_DIR = /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

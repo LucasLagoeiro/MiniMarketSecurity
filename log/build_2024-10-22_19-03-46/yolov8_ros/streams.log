@@ -1,0 +1,40 @@
+[0.524s] Invoking command in '/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros': AMENT_PREFIX_PATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs LD_LIBRARY_PATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/lib/python3.10/site-packages:/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros/build --no-deps symlink_data
+[0.630s] /home/llagoeiro/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.631s]   warnings.warn(msg)
+[0.746s] running develop
+[0.746s] /home/llagoeiro/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.746s] !!
+[0.747s] 
+[0.747s]         ********************************************************************************
+[0.747s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.747s]         Instead, use pypa/build, pypa/installer or other
+[0.747s]         standards-based tools.
+[0.747s] 
+[0.747s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.747s]         ********************************************************************************
+[0.747s] 
+[0.747s] !!
+[0.747s]   easy_install.initialize_options(self)
+[0.894s] running egg_info
+[0.894s] creating yolov8_ros.egg-info
+[0.906s] writing yolov8_ros.egg-info/PKG-INFO
+[0.906s] writing dependency_links to yolov8_ros.egg-info/dependency_links.txt
+[0.906s] writing entry points to yolov8_ros.egg-info/entry_points.txt
+[0.906s] writing requirements to yolov8_ros.egg-info/requires.txt
+[0.906s] writing top-level names to yolov8_ros.egg-info/top_level.txt
+[0.906s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[0.932s] reading manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[0.933s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[0.950s] running build_ext
+[0.950s] Creating /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/lib/python3.10/site-packages/yolov8-ros.egg-link (link to .)
+[0.950s] Installing debug_node script to /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/lib/yolov8_ros
+[0.951s] Installing detect_3d_node script to /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/lib/yolov8_ros
+[0.951s] Installing tracking_node script to /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/lib/yolov8_ros
+[0.951s] Installing yolov8_node script to /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/lib/yolov8_ros
+[0.951s] 
+[0.951s] Installed /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros
+[0.951s] running symlink_data
+[0.951s] creating /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/share/ament_index/resource_index/packages
+[0.951s] symbolically linking /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros/resource/yolov8_ros -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/share/ament_index/resource_index/packages
+[0.952s] symbolically linking /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros/package.xml -> /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/share/yolov8_ros
+[0.974s] Invoked command in '/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros' returned '0': AMENT_PREFIX_PATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs LD_LIBRARY_PATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_ros/lib/python3.10/site-packages:/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros/build --no-deps symlink_data

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs
+CMAKE_BINARY_DIR = /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs
 
 # Utility rule file for ament_cmake_python_build_yolov8_msgs_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/compiler_depend.
 include CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg:
-	cd /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/ament_cmake_python/yolov8_msgs && /usr/bin/python3 setup.py egg_info
+	cd /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/ament_cmake_python/yolov8_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_yolov8_msgs_egg: CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg
 ament_cmake_python_build_yolov8_msgs_egg: CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/depend:
-	cd /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_msgs /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_msgs /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs /home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_msgs /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_msgs /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_yolov8_msgs_egg.dir/depend
 
