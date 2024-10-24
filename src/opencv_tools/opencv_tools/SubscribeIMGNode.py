@@ -24,6 +24,7 @@ class ImageSubscriber(Node):
     self.inside = 0
     self.posX = 0
     self.countOfClassfication = 0
+    self.countPeople = 0
     self.personPosList = []
 
     self.subscription = self.create_subscription(
@@ -64,21 +65,33 @@ class ImageSubscriber(Node):
     self.get_logger().info('Receiving person pos')
     self.countOfClassfication = len(msg.detections)
 
+    if not hasattr(self, 'personStates'): self.personStates = {}
+
+
 
     # self.personPosList = []
-    countPeople = 0
+    # countPeople = 0
     for i in range(self.countOfClassfication): 
       isInside = msg.detections[i].bbox.center.position.inside
+      # alreadyInside = msg.detections[i].bbox.center.position.alreadyinside
       posX = msg.detections[i].bbox.center.position.x
+
+
+      alreadyInside = self.personStates.get(i, False)
 
       # self.personPosList.append(msg.detections[i].bbox.center.position)
       if posX > 140: isInside = True
       else: isInside = False
 
-      if isInside: countPeople+=1
+      if isInside and not alreadyInside: 
+        self.countPeople+=1
+        self.personStates[i] = True
+      elif not isInside and alreadyInside:
+        self.countPeople-=1
+        self.personStates[i] = False
     
-    self.get_logger().info(str(countPeople))
-  
+    self.get_logger().info(str(self.countPeople))
+    self.get_logger().info(str(self.personStates))
 
     
 
