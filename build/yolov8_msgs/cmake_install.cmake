@@ -1,8 +1,8 @@
-# Install script for directory: /home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_msgs
+# Install script for directory: /home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -53,7 +53,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/libyolov8_msgs__rosidl_generator_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/libyolov8_msgs__rosidl_generator_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_c.so")
     file(RPATH_CHANGE
@@ -76,12 +76,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so"
-         OLD_RPATH "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so")
@@ -99,12 +99,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_introspection_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_introspection_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so"
-         OLD_RPATH "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so")
@@ -122,12 +122,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_c.so"
-         OLD_RPATH "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_c.so")
@@ -145,7 +145,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so")
     file(RPATH_CHANGE
@@ -168,7 +168,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so")
     file(RPATH_CHANGE
@@ -191,7 +191,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/libyolov8_msgs__rosidl_typesupport_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_typesupport_cpp.so")
     file(RPATH_CHANGE
@@ -211,7 +211,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs"
+        "/home/robo/llagoeiro/MiniMarketSecurity/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs"
       )
 endif()
 
@@ -222,12 +222,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_py.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/libyolov8_msgs__rosidl_generator_py.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/libyolov8_msgs__rosidl_generator_py.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_py.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_py.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_py.so"
-         OLD_RPATH "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libyolov8_msgs__rosidl_generator_py.so")
@@ -242,7 +242,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -251,9 +251,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -261,7 +261,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -270,9 +270,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -280,7 +280,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -289,9 +289,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -299,7 +299,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -308,9 +308,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -318,7 +318,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -327,14 +327,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -343,9 +343,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -353,7 +353,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -362,9 +362,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -372,7 +372,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -381,9 +381,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -391,7 +391,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake"
-         "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake")
+         "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -400,15 +400,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/yolov8_msgs/cmake" TYPE FILE FILES "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/CMakeFiles/Export/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport-noconfig.cmake")
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/yolov8_msgs__py/cmake_install.cmake")
+  include("/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/yolov8_msgs__py/cmake_install.cmake")
 
 endif()
 
@@ -420,5 +420,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_msgs/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/robo/llagoeiro/MiniMarketSecurity/build/yolov8_msgs/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

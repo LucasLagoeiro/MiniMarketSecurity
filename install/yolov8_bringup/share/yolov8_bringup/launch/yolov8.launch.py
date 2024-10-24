@@ -1,1 +1,1 @@
-/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/yolov8_bringup/launch/yolov8.launch.py
+/home/robo/llagoeiro/MiniMarketSecurity/src/yolov8_bringup/launch/yolov8.launch.py

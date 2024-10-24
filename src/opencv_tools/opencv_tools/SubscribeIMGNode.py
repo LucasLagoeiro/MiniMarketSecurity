@@ -19,8 +19,13 @@ class ImageSubscriber(Node):
   
   def __init__(self):
     super().__init__('image_subscriber')
-    self.goInside = False
+
+    self.haveInside = False
     self.inside = 0
+    self.posX = 0
+    self.countOfClassfication = 0
+    self.personPosList = []
+
     self.subscription = self.create_subscription(
       Image, 
       '/yolo/dbg_image', 
@@ -35,24 +40,36 @@ class ImageSubscriber(Node):
     self.get_logger().info('Receiving video frame')
     current_frame = self.br.imgmsg_to_cv2(data)
     print(current_frame.shape)
+    
     verde = (0,255,0)
-    cv2.line(current_frame,(160,0),(160,480),verde,3)
-    cv2.line(current_frame,(200,0),(200,480),verde,3)
+    cv2.line(current_frame,(140,0),(140,current_frame.shape[1]),verde,3)
+    cv2.line(current_frame,(200,0),(200,current_frame.shape[1]),verde,3)
 
-    if self.posX == 160: 
-      self.goInside = True
-    if self.posX == 200 and self.goInside: 
-      self.inside += 1
-      self.goInside = False
+    if self.posX > 140: 
+      self.haveInside = True
+    else: 
+      self.haveInside = False
+      self.inside -= 1
+
+
+    if self.haveInside: 
+      self.inside = self.countOfClassfication
+
+    self.get_logger().info(str(self.inside))
 
     cv2.imshow("camera", current_frame)
     cv2.waitKey(1)
 
   def listener_callback_personPos(self, msg):
     self.get_logger().info('Receiving person pos')
-    self.get_logger().info(str(msg.detections[0].bbox.center.position.x)) 
-    self.posX = msg.detections[0].bbox.center.position.x
-    self.posY = msg.detections[0].bbox.center.position.y
+    self.countOfClassfication = len(msg.detections)
+
+    if self.countOfClassfication != len(self.personPosList):
+      self.personPosList = []
+      for i in range(len(msg.detections)): self.personPosList.append(msg.detections[i].bbox.center.position)
+    self.get_logger().info(str(self.personPosList) + "\n -------------------------") 
+
+    
    
 def main(args=None):
   rclpy.init(args=args)

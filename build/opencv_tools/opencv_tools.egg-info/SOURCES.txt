@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 opencv_tools/PublisherIMGNode.py
+opencv_tools/PublisherPNGNode.py
 opencv_tools/SubscribeIMGNode.py
 opencv_tools/SubscribeIMGNodeYOLO.py
 opencv_tools/__init__.py

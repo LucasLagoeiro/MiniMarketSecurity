@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'publisherIMG = opencv_tools.PublisherIMGNode:main',
+            'publisherPNG = opencv_tools.PublisherPNGNode:main',
             'subscribeIMG = opencv_tools.SubscribeIMGNode:main',
             'subscribeYOLOIMG = opencv_tools.SubscribeIMGNodeYOLO:main'
         ],
