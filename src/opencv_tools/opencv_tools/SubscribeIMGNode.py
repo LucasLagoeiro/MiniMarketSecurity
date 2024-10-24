@@ -14,6 +14,8 @@ from yolov8_msgs.msg import KeyPoint2DArray
 from yolov8_msgs.msg import Detection
 from yolov8_msgs.msg import DetectionArray
 
+import time
+
   
 class ImageSubscriber(Node):
   
@@ -66,6 +68,8 @@ class ImageSubscriber(Node):
     self.countOfClassfication = len(msg.detections)
 
     if not hasattr(self, 'personStates'): self.personStates = {}
+    if not hasattr(self, 'exitTimes'):    self.exitTimes = {}
+    if not hasattr(self, 'personOut'):    self.personOut = []
 
 
 
@@ -86,15 +90,38 @@ class ImageSubscriber(Node):
       if isInside and not alreadyInside: 
         self.countPeople+=1
         self.personStates[i] = True
+        if i in self.exitTimes: del self.exitTimes[i]
       elif not isInside and alreadyInside:
         self.countPeople-=1
         self.personStates[i] = False
+        self.exitTimes[i] = time.time() 
+
+
+    time_limit = 5
+    # Verificar o tempo decorrido e remover pessoas que saíram há mais de 'time_limit' segundos
+    # list comprehension = [nova_lista_item for item in iterável if condição]
+    keys_to_remove = [key for key, exit_time in self.exitTimes.items() if time.time() - exit_time > time_limit]
+
+    for key in keys_to_remove:
+      del self.personStates[key]
+      del self.exitTimes[key]
+    
+    #for i in list(self.exitTimes): 
+     # if(time.time() - self.exitTimes[i] > time_limit): self.personOut.append(i)
+
+    #for i in self.personOut:
+    #  self.personStates.pop(i, None)
+    #  self.exitTimes.pop(i, None)
+
+
 
     
     
-    self.get_logger().info(str(self.countPeople))
-    self.get_logger().info(str(self.personStates))
+    self.get_logger().info("Contagem: " + str(self.countPeople))
+    self.get_logger().info("Inside: " + str(self.personStates))
+    self.get_logger().info("Pessoas que sairam: " + str(keys_to_remove))
 
+    
     
 
     # self.get_logger().info(str(self.personPosList[0].x) + "\n -------------------------") 

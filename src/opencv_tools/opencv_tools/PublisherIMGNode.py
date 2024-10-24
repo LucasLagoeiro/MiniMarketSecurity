@@ -11,7 +11,7 @@ class ImagePublisher(Node):
     self.publisher_ = self.create_publisher(Image, 'image_raw', 10)
     timer_period = 0.01
     self.timer = self.create_timer(timer_period, self.timer_callback)
-    self.cap = cv2.VideoCapture(0)
+    self.cap = cv2.VideoCapture(3)
     #self.cap = cv2.imread('/home/robo/llagoeiro/MiniMarketSecurity/src/opencv_tools/opencv_tools/image.png')
 
 
