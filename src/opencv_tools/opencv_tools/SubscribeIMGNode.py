@@ -46,16 +46,16 @@ class ImageSubscriber(Node):
     cv2.line(current_frame,(200,0),(200,current_frame.shape[1]),verde,3)
 
 
-    for i in range(len(self.personPosList)):
-      if self.personPosList[i].x > 140: self.haveInside = True
-      else: self.haveInside = False
+    # for i in range(len(self.personPosList)):
+    #   if self.personPosList[i].x > 140: self.haveInside = True
+    #   else: self.haveInside = False
 
-      if not self.haveInside: self.countOfClassfication -= 1
+    #   if not self.haveInside: self.countOfClassfication -= 1
 
-    if self.haveInside: 
-      self.inside = self.countOfClassfication
+    # if self.haveInside: 
+    #   self.inside = self.countOfClassfication
 
-    self.get_logger().info(str(self.inside))
+    # self.get_logger().info(str(self.inside))
 
     cv2.imshow("camera", current_frame)
     cv2.waitKey(1)
@@ -65,9 +65,24 @@ class ImageSubscriber(Node):
     self.countOfClassfication = len(msg.detections)
 
 
-    self.personPosList = []
-    for i in range(len(msg.detections)): self.personPosList.append(msg.detections[i].bbox.center.position)
-    self.get_logger().info(str(self.personPosList[0].x) + "\n -------------------------") 
+    # self.personPosList = []
+    countPeople = 0
+    for i in range(self.countOfClassfication): 
+      isInside = msg.detections[i].bbox.center.position.inside
+      posX = msg.detections[i].bbox.center.position.x
+
+      # self.personPosList.append(msg.detections[i].bbox.center.position)
+      if posX > 140: isInside = True
+      else: isInside = False
+
+      if isInside: countPeople+=1
+    
+    self.get_logger().info(str(countPeople))
+  
+
+    
+
+    # self.get_logger().info(str(self.personPosList[0].x) + "\n -------------------------") 
 
     
    
