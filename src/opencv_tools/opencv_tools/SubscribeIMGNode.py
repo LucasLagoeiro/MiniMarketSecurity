@@ -89,6 +89,8 @@ class ImageSubscriber(Node):
       elif not isInside and alreadyInside:
         self.countPeople-=1
         self.personStates[i] = False
+
+    
     
     self.get_logger().info(str(self.countPeople))
     self.get_logger().info(str(self.personStates))
