@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros",
+        "/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/yolov8_ros/lib/python3.10/site-packages",
+        "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/opencv_tools",
+        "/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/yolov8_ros",
+        "/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/yolov8_ros/lib/python3.10/site-packages",
+        "/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/build/opencv_tools",
+        "/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

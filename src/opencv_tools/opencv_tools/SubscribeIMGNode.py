@@ -45,12 +45,12 @@ class ImageSubscriber(Node):
     cv2.line(current_frame,(140,0),(140,current_frame.shape[1]),verde,3)
     cv2.line(current_frame,(200,0),(200,current_frame.shape[1]),verde,3)
 
-    if self.posX > 140: 
-      self.haveInside = True
-    else: 
-      self.haveInside = False
-      self.inside -= 1
 
+    for i in range(len(self.personPosList)):
+      if self.personPosList[i].x > 140: self.haveInside = True
+      else: self.haveInside = False
+
+      if not self.haveInside: self.countOfClassfication -= 1
 
     if self.haveInside: 
       self.inside = self.countOfClassfication
@@ -64,10 +64,10 @@ class ImageSubscriber(Node):
     self.get_logger().info('Receiving person pos')
     self.countOfClassfication = len(msg.detections)
 
-    if self.countOfClassfication != len(self.personPosList):
-      self.personPosList = []
-      for i in range(len(msg.detections)): self.personPosList.append(msg.detections[i].bbox.center.position)
-    self.get_logger().info(str(self.personPosList) + "\n -------------------------") 
+
+    self.personPosList = []
+    for i in range(len(msg.detections)): self.personPosList.append(msg.detections[i].bbox.center.position)
+    self.get_logger().info(str(self.personPosList[0].x) + "\n -------------------------") 
 
     
    
