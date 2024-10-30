@@ -12,7 +12,7 @@ class ImagePublisher(Node):
     timer_period = 0.01
     self.timer = self.create_timer(timer_period, self.timer_callback)
     #self.cap = cv2.VideoCapture("/home/robo/llagoeiro/MiniMarketSecurity/src/opencv_tools/opencv_tools/videoTest.webm")
-    self.cap = cv2.imread('/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/src/opencv_tools/opencv_tools/homeIMG.JPG')
+    self.cap = cv2.imread('/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/src/opencv_tools/opencv_tools/tst.jpg')
 
 
     #if not self.cap.isOpened(): self.get_logger().error('Error opening video stream or file')
@@ -20,6 +20,7 @@ class ImagePublisher(Node):
     self.br = CvBridge()
     
   def timer_callback(self):
+    frame_resized = cv2.resize(self.cap, (640,640))
     self.publisher_.publish(self.br.cv2_to_imgmsg(self.cap))
 
     #ret, frame = self.cap.read()
