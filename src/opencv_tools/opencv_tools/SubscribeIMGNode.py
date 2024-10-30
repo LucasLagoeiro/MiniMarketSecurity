@@ -97,14 +97,23 @@ class ImageSubscriber(Node):
         self.exitTimes[i] = time.time() 
 
 
-    time_limit = 5
+    time_limitOut = 3
     # Verificar o tempo decorrido e remover pessoas que saíram há mais de 'time_limit' segundos
     # list comprehension = [nova_lista_item for item in iterável if condição]
-    keys_to_remove = [key for key, exit_time in self.exitTimes.items() if time.time() - exit_time > time_limit]
+    keys_to_remove = [key for key, exit_time in self.exitTimes.items() if time.time() - exit_time > time_limitOut]
 
     for key in keys_to_remove:
       del self.personStates[key]
       del self.exitTimes[key]
+
+    #time_limitAnyone = 8
+    #if self.countOfClassfication == 0: 
+    #  time_anyoneDetected = time.time()
+    
+    
+    # if time.time() - time_anyoneDetected > time_limitAnyone: 
+    #   self.countPeople = 0
+    #   self.personStates.clear()
     
     #for i in list(self.exitTimes): 
      # if(time.time() - self.exitTimes[i] > time_limit): self.personOut.append(i)

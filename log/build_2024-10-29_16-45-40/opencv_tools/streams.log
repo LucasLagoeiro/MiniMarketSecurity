@@ -1,0 +1,33 @@
+[1.343s] Invoking command in '/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/opencv_tools': PYTHONPATH=/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/opencv_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/opencv_tools/build --no-deps symlink_data
+[1.799s] running develop
+[1.800s] /home/robo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.800s] !!
+[1.800s] 
+[1.800s]         ********************************************************************************
+[1.800s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.800s]         Instead, use pypa/build, pypa/installer or other
+[1.800s]         standards-based tools.
+[1.800s] 
+[1.800s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.801s]         ********************************************************************************
+[1.801s] 
+[1.801s] !!
+[1.801s]   easy_install.initialize_options(self)
+[2.094s] running egg_info
+[2.115s] writing opencv_tools.egg-info/PKG-INFO
+[2.116s] writing dependency_links to opencv_tools.egg-info/dependency_links.txt
+[2.116s] writing entry points to opencv_tools.egg-info/entry_points.txt
+[2.116s] writing requirements to opencv_tools.egg-info/requires.txt
+[2.116s] writing top-level names to opencv_tools.egg-info/top_level.txt
+[2.168s] reading manifest file 'opencv_tools.egg-info/SOURCES.txt'
+[2.169s] writing manifest file 'opencv_tools.egg-info/SOURCES.txt'
+[2.192s] running build_ext
+[2.193s] Creating /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/python3.10/site-packages/opencv-tools.egg-link (link to .)
+[2.193s] Installing publisherIMG script to /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/opencv_tools
+[2.194s] Installing publisherPNG script to /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/opencv_tools
+[2.194s] Installing subscribeIMG script to /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/opencv_tools
+[2.194s] Installing subscribeYOLOIMG script to /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/opencv_tools
+[2.194s] 
+[2.194s] Installed /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/opencv_tools
+[2.194s] running symlink_data
+[2.236s] Invoked command in '/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/opencv_tools' returned '0': PYTHONPATH=/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/opencv_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/install/opencv_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/opencv_tools/build --no-deps symlink_data

@@ -287,8 +287,7 @@ class Yolov8Node(LifecycleNode):
                 verbose=False,
                 stream=False,
                 conf=self.threshold,
-                device=self.device,
-                classes = 0
+                device=self.device                
             )
             results: Results = results[0].cpu()
 

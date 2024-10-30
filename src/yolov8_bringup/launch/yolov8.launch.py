@@ -37,7 +37,7 @@ def generate_launch_description():
     model = LaunchConfiguration("model")
     model_cmd = DeclareLaunchArgument(
         "model",
-        default_value="yolov8m.pt",
+        default_value="yolov8n.pt",
         description="Model name or path")
 
     tracker = LaunchConfiguration("tracker")

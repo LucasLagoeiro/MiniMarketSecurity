@@ -1,0 +1,1 @@
+/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/src/opencv_tools/setup.py

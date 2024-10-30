@@ -1,0 +1,1 @@
+/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/yolov8_msgs/rosidl_generator_c/yolov8_msgs/msg/bounding_box2_d.h

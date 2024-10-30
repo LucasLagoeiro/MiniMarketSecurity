@@ -1,0 +1,1 @@
+/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/src/yolov8_msgs/msg/Point2D.msg

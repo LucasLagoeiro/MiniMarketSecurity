@@ -12,7 +12,7 @@ class ImagePublisher(Node):
     timer_period = 0.01
     self.timer = self.create_timer(timer_period, self.timer_callback)
     #self.cap = cv2.VideoCapture("/home/robo/llagoeiro/MiniMarketSecurity/src/opencv_tools/opencv_tools/videoTest.webm")
-    self.cap = cv2.imread('/home/robo/llagoeiro/MiniMarketSecurity/src/opencv_tools/opencv_tools/image.png')
+    self.cap = cv2.imread('/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/src/opencv_tools/opencv_tools/homeIMG.JPG')
 
 
     #if not self.cap.isOpened(): self.get_logger().error('Error opening video stream or file')
