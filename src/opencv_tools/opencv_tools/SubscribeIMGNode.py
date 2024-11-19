@@ -98,6 +98,7 @@ class ImageSubscriber(Node):
 
 
     time_limitOut = 3
+    
     # Verificar o tempo decorrido e remover pessoas que saíram há mais de 'time_limit' segundos
     # list comprehension = [nova_lista_item for item in iterável if condição]
     keys_to_remove = [key for key, exit_time in self.exitTimes.items() if time.time() - exit_time > time_limitOut]
