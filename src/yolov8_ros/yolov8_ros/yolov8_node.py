@@ -53,8 +53,9 @@ class Yolov8Node(LifecycleNode):
         # params
         self.declare_parameter("model_type", "YOLO")
         self.declare_parameter("model", "yolov8m.pt")
+        self.declare_parameter("detect", "human")
         self.declare_parameter("device", "cuda:0")
-        self.declare_parameter("threshold", 0.3)
+        self.declare_parameter("threshold", 0.8)
         self.declare_parameter("enable", True)
         self.declare_parameter("image_reliability",
                                QoSReliabilityPolicy.BEST_EFFORT)
@@ -75,6 +76,9 @@ class Yolov8Node(LifecycleNode):
 
         self.device = self.get_parameter(
             "device").get_parameter_value().string_value
+        
+        self.detect = self.get_parameter(
+            "detect").get_parameter_value().string_value
 
         self.threshold = self.get_parameter(
             "threshold").get_parameter_value().double_value
@@ -84,6 +88,8 @@ class Yolov8Node(LifecycleNode):
 
         self.reliability = self.get_parameter(
             "image_reliability").get_parameter_value().integer_value
+        
+
 
         self.image_qos_profile = QoSProfile(
             reliability=self.reliability,
@@ -91,9 +97,12 @@ class Yolov8Node(LifecycleNode):
             durability=QoSDurabilityPolicy.VOLATILE,
             depth=1
         )
+        
+        if self.detect == "human": detection_topic = "detections_human"
+        else: detection_topic = "detections_food"
 
         self._pub = self.create_lifecycle_publisher(
-            DetectionArray, "detections", 10)
+            DetectionArray, detection_topic, 10)
         self._srv = self.create_service(
             SetBool, "enable", self.enable_cb
         )
@@ -279,6 +288,13 @@ class Yolov8Node(LifecycleNode):
     def image_cb(self, msg: Image) -> None:
 
         if self.enable:
+            
+            # detect humans or foods
+            if self.detect == "human": type = 0
+            else: type = 17
+
+            # if self.detect == "foods": type = 17
+            # else: type = 0
 
             # convert image + predict
             cv_image = self.cv_bridge.imgmsg_to_cv2(msg)
@@ -287,8 +303,10 @@ class Yolov8Node(LifecycleNode):
                 verbose=False,
                 stream=False,
                 conf=self.threshold,
-                device=self.device                
+                device=self.device,   
+                classes = type            
             )
+            
             results: Results = results[0].cpu()
 
             if results.boxes or results.obb:

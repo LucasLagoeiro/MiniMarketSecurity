@@ -52,11 +52,14 @@ class DebugNode(LifecycleNode):
         self.cv_bridge = CvBridge()
 
         # params
+        self.declare_parameter("detect", "human")
         self.declare_parameter("image_reliability",
                                QoSReliabilityPolicy.BEST_EFFORT)
 
     def on_configure(self, state: LifecycleState) -> TransitionCallbackReturn:
         self.get_logger().info(f"[{self.get_name()}] Configuring...")
+
+        self.detect = self.get_parameter("detect").get_parameter_value().string_value
 
         self.image_qos_profile = QoSProfile(
             reliability=self.get_parameter(
@@ -66,12 +69,22 @@ class DebugNode(LifecycleNode):
             depth=1
         )
 
+
+        if self.detect == "human": 
+            detection_topic  = "dbg_image_human"
+            bb_markers_topic = "dgb_bb_markers_human"
+            kp_markers_topic = "dgb_kp_markers_human"
+        else: 
+            detection_topic = "dbg_image_food"
+            bb_markers_topic = "dgb_bb_markers_food"
+            kp_markers_topic = "dgb_kp_markers_food"
+
         # pubs
-        self._dbg_pub = self.create_publisher(Image, "dbg_image", 10)
+        self._dbg_pub = self.create_publisher(Image, detection_topic, 10)
         self._bb_markers_pub = self.create_publisher(
-            MarkerArray, "dgb_bb_markers", 10)
+            MarkerArray, bb_markers_topic, 10)
         self._kp_markers_pub = self.create_publisher(
-            MarkerArray, "dgb_kp_markers", 10)
+            MarkerArray, kp_markers_topic, 10)
 
         super().on_configure(state)
         self.get_logger().info(f"[{self.get_name()}] Configured")
@@ -81,11 +94,13 @@ class DebugNode(LifecycleNode):
     def on_activate(self, state: LifecycleState) -> TransitionCallbackReturn:
         self.get_logger().info(f"[{self.get_name()}] Activating...")
 
+        if self.detect == "human": detection_sub = "detections_human"
+        else: detection_sub = "detections_food"
         # subs
         self.image_sub = message_filters.Subscriber(
             self, Image, "image_raw", qos_profile=self.image_qos_profile)
         self.detections_sub = message_filters.Subscriber(
-            self, DetectionArray, "detections", qos_profile=10)
+            self, DetectionArray, detection_sub, qos_profile=10)
 
         self._synchronizer = message_filters.ApproximateTimeSynchronizer(
             (self.image_sub, self.detections_sub), 10, 0.5)

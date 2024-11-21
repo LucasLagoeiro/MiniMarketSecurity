@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'publisherIMG = opencv_tools.PublisherIMGNode:main',
             'publisherPNG = opencv_tools.PublisherPNGNode:main',
-            'publisherVIDEO = opencv_tools.PublisherVIDEONode:main',
+            'publisherHumanVIDEO = opencv_tools.PublisherHumanVIDEONode:main',
+            'publisherTomatoVIDEO = opencv_tools.PublisherTomatoVIDEONode:main',
             'subscribeIMG = opencv_tools.SubscribeIMGNode:main',
             'subscribeYOLOIMG = opencv_tools.SubscribeIMGNodeYOLO:main'
         ],

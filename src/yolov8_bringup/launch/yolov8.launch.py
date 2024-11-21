@@ -61,7 +61,7 @@ def generate_launch_description():
     threshold = LaunchConfiguration("threshold")
     threshold_cmd = DeclareLaunchArgument(
         "threshold",
-        default_value="0.3",
+        default_value="0.8",
         description="Minimum probability of a detection to be published")
 
     input_image_topic = LaunchConfiguration("input_image_topic")
@@ -82,6 +82,12 @@ def generate_launch_description():
         "namespace",
         default_value="yolo",
         description="Namespace for the nodes")
+    
+    detect = LaunchConfiguration("detect")
+    detect_cmd = DeclareLaunchArgument(
+        "detect",
+        default_value="human",
+        description="Select what you want to detect (human/object)")
 
     #
     # NODES
@@ -94,6 +100,7 @@ def generate_launch_description():
         parameters=[{
             "model_type": model_type,
             "model": model,
+            "detect": detect,
             "device": device,
             "enable": enable,
             "threshold": threshold,
@@ -119,7 +126,8 @@ def generate_launch_description():
         executable="debug_node",
         name="debug_node",
         namespace=namespace,
-        parameters=[{"image_reliability": image_reliability}],
+        parameters=[{"detect": detect,
+                     "image_reliability": image_reliability}],
         remappings=[
             ("image_raw", input_image_topic),
             ("detections", "tracking")
@@ -137,7 +145,7 @@ def generate_launch_description():
     ld.add_action(input_image_topic_cmd)
     ld.add_action(image_reliability_cmd)
     ld.add_action(namespace_cmd)
-
+    ld.add_action(detect_cmd)
     ld.add_action(detector_node_cmd)
     ld.add_action(tracking_node_cmd)
     ld.add_action(debug_node_cmd)
