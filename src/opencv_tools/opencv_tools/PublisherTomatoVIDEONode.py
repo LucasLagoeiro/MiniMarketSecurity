@@ -11,7 +11,7 @@ class ImagePublisher(Node):
     self.publisher_ = self.create_publisher(Image, 'tomato_image_raw', 10)
     
 
-    self.cap = cv2.VideoCapture('/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/src/opencv_tools/data/tomato.mp4')
+    self.cap = cv2.VideoCapture('/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/opencv_tools/data/tomatoInHome.mp4')
     video_fps = self.cap.get(cv2.CAP_PROP_FPS)
     self.get_logger().info(f'FPS original do vídeo: {video_fps}')
 
@@ -32,7 +32,7 @@ class ImagePublisher(Node):
       print(frame.shape)
       frame_resized = cv2.resize(frame, (1280,720))
       print(frame_resized.shape)
-      self.publisher_.publish(self.br.cv2_to_imgmsg(frame_resized))
+      self.publisher_.publish(self.br.cv2_to_imgmsg(frame))
       self.get_logger().info('Publishing video frame')
     else:
       # Reinicia o vídeo se chegar ao final

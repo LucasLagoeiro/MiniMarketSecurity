@@ -24,8 +24,8 @@ setup(
             'publisherPNG = opencv_tools.PublisherPNGNode:main',
             'publisherHumanVIDEO = opencv_tools.PublisherHumanVIDEONode:main',
             'publisherTomatoVIDEO = opencv_tools.PublisherTomatoVIDEONode:main',
-            'subscribeIMG = opencv_tools.SubscribeIMGNode:main',
-            'subscribeYOLOIMG = opencv_tools.SubscribeIMGNodeYOLO:main'
+            'subscribeHumanVIDEO = opencv_tools.SubscribeHumanVIDEONode:main',
+            'subscribeTomatoVIDEO = opencv_tools.SubscribeTomatoVIDEONode:main'
         ],
     },
 )

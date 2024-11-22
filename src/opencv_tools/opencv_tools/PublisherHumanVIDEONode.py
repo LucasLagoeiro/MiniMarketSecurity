@@ -11,7 +11,7 @@ class ImagePublisher(Node):
     self.publisher_ = self.create_publisher(Image, 'human_image_raw', 10)
     
 
-    self.cap = cv2.VideoCapture('/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/src/opencv_tools/data/human.mp4')
+    self.cap = cv2.VideoCapture('src/opencv_tools/data/enterInMarket.mp4')
     video_fps = self.cap.get(cv2.CAP_PROP_FPS)
     self.get_logger().info(f'FPS original do vídeo: {video_fps}')
 
