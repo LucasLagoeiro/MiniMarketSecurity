@@ -1,1 +1,0 @@
-/home/robo/Desktop/lagoeiro/MiniMarketSecurity/MiniMarketSecurity/build/yolov8_msgs/rosidl_cmake/rosidl_cmake-extras.cmake
