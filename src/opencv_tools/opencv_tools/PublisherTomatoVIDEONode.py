@@ -11,7 +11,7 @@ class ImagePublisher(Node):
     self.publisher_ = self.create_publisher(Image, 'tomato_image_raw', 10)
     
 
-    self.cap = cv2.VideoCapture('/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/opencv_tools/data/tomatoInHome.mp4')
+    self.cap = cv2.VideoCapture('/home/llagoeiro/Desktop/FEI/8_semestre/VisaoComputacionalFolder/projeto-visaoComputaria/src/opencv_tools/data/pickAndpay.mp4')
     video_fps = self.cap.get(cv2.CAP_PROP_FPS)
     self.get_logger().info(f'FPS original do vídeo: {video_fps}')
 

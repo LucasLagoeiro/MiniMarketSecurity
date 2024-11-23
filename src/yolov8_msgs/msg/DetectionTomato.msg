@@ -1,0 +1,2 @@
+bool shelf
+bool pay

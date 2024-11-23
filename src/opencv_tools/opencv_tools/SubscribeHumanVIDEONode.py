@@ -3,6 +3,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 import cv2
+import json
 
 from std_srvs.srv import SetBool
 from sensor_msgs.msg import Image
@@ -13,6 +14,7 @@ from yolov8_msgs.msg import KeyPoint2D
 from yolov8_msgs.msg import KeyPoint2DArray
 from yolov8_msgs.msg import Detection
 from yolov8_msgs.msg import DetectionArray
+from yolov8_msgs.msg import DetectionPerson
 
 import time
 
@@ -22,13 +24,14 @@ class ImageSubscriber(Node):
   def __init__(self):
     super().__init__('image_subscriber')
 
-    self.haveInside = False
-    self.inside = 0
-    self.posX = 0
     self.countOfClassfication = 0
     self.countPeople = 0
-    self.personPosList = []
+    self.personStates = {}
+    self.exitTimes = {}
+    self.personOut = []
+    self.isInside = False
 
+    #subs
     self.subscription = self.create_subscription(
       Image, 
       '/yolo/dbg_image_human', 
@@ -37,7 +40,16 @@ class ImageSubscriber(Node):
     self.subscription # prevent unused variable warning
     self.br = CvBridge()
 
-    self.subscribePersonPos = self.create_subscription(DetectionArray, '/yolo/detections_human', self.listener_callback_personPos, 10)
+    self.subscribePersonPos = self.create_subscription(
+      DetectionArray, 
+      '/yolo/detections_human', 
+      self.listener_callback_personPos, 
+      10)
+
+    #pubs
+    self.publisherPersonPos = self.create_publisher(DetectionPerson,'/yolo/is_inside',10)
+    self.timer = self.create_timer(0.1, self.publish_person)
+
     
   def listener_callback(self, data):
     self.get_logger().info('Receiving video frame')
@@ -45,20 +57,7 @@ class ImageSubscriber(Node):
     print(current_frame.shape)
     
     verde = (0,255,0)
-    cv2.line(current_frame,(540,0),(540,current_frame.shape[1]),verde,3)
     cv2.line(current_frame,(600,0),(600,current_frame.shape[1]),verde,3)
-
-
-    # for i in range(len(self.personPosList)):
-    #   if self.personPosList[i].x > 140: self.haveInside = True
-    #   else: self.haveInside = False
-
-    #   if not self.haveInside: self.countOfClassfication -= 1
-
-    # if self.haveInside: 
-    #   self.inside = self.countOfClassfication
-
-    # self.get_logger().info(str(self.inside))
 
     cv2.imshow("camera", current_frame)
     cv2.waitKey(1)
@@ -67,31 +66,25 @@ class ImageSubscriber(Node):
     self.get_logger().info('Receiving person pos')
     self.countOfClassfication = len(msg.detections)
 
-    if not hasattr(self, 'personStates'): self.personStates = {}
-    if not hasattr(self, 'exitTimes'):    self.exitTimes = {}
-    if not hasattr(self, 'personOut'):    self.personOut = []
 
 
-
-    # self.personPosList = []
-    # countPeople = 0
     for i in range(self.countOfClassfication): 
-      isInside = msg.detections[i].bbox.center.position.inside
-      # alreadyInside = msg.detections[i].bbox.center.position.alreadyinside
       posX = msg.detections[i].bbox.center.position.x
 
 
       alreadyInside = self.personStates.get(i, False)
 
       # self.personPosList.append(msg.detections[i].bbox.center.position)
-      if posX > 540: isInside = True
-      else: isInside = False
+      if posX > 600: 
+        self.isInside = True 
+      else: 
+        self.isInside = False
 
-      if isInside and not alreadyInside: 
+      if self.isInside and not alreadyInside: 
         self.countPeople+=1
         self.personStates[i] = True
         if i in self.exitTimes: del self.exitTimes[i]
-      elif not isInside and alreadyInside:
+      elif not self.isInside and alreadyInside:
         self.countPeople-=1
         self.personStates[i] = False
         self.exitTimes[i] = time.time() 
@@ -107,34 +100,21 @@ class ImageSubscriber(Node):
       del self.personStates[key]
       del self.exitTimes[key]
 
-    #time_limitAnyone = 8
-    #if self.countOfClassfication == 0: 
-    #  time_anyoneDetected = time.time()
     
-    
-    # if time.time() - time_anyoneDetected > time_limitAnyone: 
-    #   self.countPeople = 0
-    #   self.personStates.clear()
-    
-    #for i in list(self.exitTimes): 
-     # if(time.time() - self.exitTimes[i] > time_limit): self.personOut.append(i)
+    # self.get_logger().info("Contagem: " + str(self.countPeople))
+    # self.get_logger().info("Inside: " + str(self.personStates))
+    # self.get_logger().info("Pessoas que sairam: " + str(keys_to_remove))
 
-    #for i in self.personOut:
-    #  self.personStates.pop(i, None)
-    #  self.exitTimes.pop(i, None)
+      
+  def publish_person(self):
+    msg = DetectionPerson()
 
-
-
+    # Serializando o dicionário para JSON
+    json_data = json.dumps(self.personStates)
+    msg.count_people.data = json_data
+    msg.inside = self.isInside
     
-    
-    self.get_logger().info("Contagem: " + str(self.countPeople))
-    self.get_logger().info("Inside: " + str(self.personStates))
-    self.get_logger().info("Pessoas que sairam: " + str(keys_to_remove))
-
-    
-    
-
-    # self.get_logger().info(str(self.personPosList[0].x) + "\n -------------------------") 
+    self.publisherPersonPos.publish(msg)
 
     
    
