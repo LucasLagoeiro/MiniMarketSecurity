@@ -1,0 +1,33 @@
+names:
+- Cleaner-Cleanup_Items
+- Coffee-Pantry_Items
+- Coke-Drinks
+- Detergent-Cleanup_Items
+- English_Sauce-Pantry_Items
+- Flakes-Snacks
+- Guarana-Drinks
+- Guarana_Can-Drinks
+- Guava-Snacks
+- Ketchup-Pantry_Items
+- Mayonnaise-Pantry_Items
+- Mustard-Pantry_Items
+- Pig_Safe-Miscellaneous
+- Pringles-Snacks
+- Soap-Cleanup_Items
+- Soda-Drinks
+- Tea-Drinks
+- Tomato_Sauce-Pantry_Items
+- Tonic-Drinks
+- Trophy-Miscellaneous
+- Tuna_Can-Pantry_Items
+- Water_Bottle-Drinks
+nc: 22
+roboflow:
+  license: CC BY 4.0
+  project: robo-segmentation
+  url: https://universe.roboflow.com/leo-martins-xpvd9/robo-segmentation/dataset/7
+  version: 7
+  workspace: leo-martins-xpvd9
+test: test/images
+train: train/images
+val: valid/images

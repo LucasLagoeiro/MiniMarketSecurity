@@ -45,7 +45,8 @@ class MinimalPublisher(Node):
 
     def timer_callback(self):
         msg = DetectionPerson()
-
+        msg.steal = False
+        
         if not self.inside and not self.shelf and not self.pay:
             msg.steal = True
         else:
