@@ -20,7 +20,7 @@ class ImagePublisher(Node):
 
 
     #self.cap = cv2.imread('/home/robo/llagoeiro/MiniMarketSecurity/src/opencv_tools/opencv_tools/image.png')
-
+    self.last_frame = None  # Variável para armazenar o último frame válido
 
     if not self.cap.isOpened(): self.get_logger().error('Error opening video stream or file')
 
@@ -29,14 +29,19 @@ class ImagePublisher(Node):
   def timer_callback(self):
     ret, frame = self.cap.read()
     if ret == True:
+      self.last_frame = frame
       print(frame.shape)
       frame_resized = cv2.resize(frame, (1280,720))
       print(frame_resized.shape)
       self.publisher_.publish(self.br.cv2_to_imgmsg(frame))
       self.get_logger().info('Publishing video frame')
     else:
-      # Reinicia o vídeo se chegar ao final
-      self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+      # Pausa o vídeo se chegar ao final
+      if self.last_frame is not None:
+        self.get_logger().info('Vídeo terminou, publicando o último frame.')
+        frame_resized = cv2.resize(self.last_frame, (1280, 720))
+        self.publisher_.publish(self.br.cv2_to_imgmsg(frame_resized))
+      # self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
    
 def main(args=None):
   rclpy.init(args=args)
