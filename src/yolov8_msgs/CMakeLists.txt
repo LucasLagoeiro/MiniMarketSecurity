@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Detection.msg"
   "msg/DetectionPerson.msg"
   "msg/DetectionTomato.msg"
+  "msg/DetectionSteal.msg"
   "msg/DetectionArray.msg"
   DEPENDENCIES std_msgs geometry_msgs
 )

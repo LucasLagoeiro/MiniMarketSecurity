@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
-from yolov8_msgs.msg import DetectionPerson, DetectionTomato
+from yolov8_msgs.msg import DetectionPerson, DetectionTomato, DetectionSteal
 
 
 class MinimalPublisher(Node):
@@ -11,7 +11,7 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
 
         #pubs
-        self.publisher_ = self.create_publisher(DetectionPerson, 'steal', 10)
+        self.publisher_ = self.create_publisher(DetectionSteal, 'steal', 10)
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
@@ -44,7 +44,7 @@ class MinimalPublisher(Node):
         self.pay = msg.pay
 
     def timer_callback(self):
-        msg = DetectionPerson()
+        msg = DetectionSteal()
         msg.steal = False
         
         if not self.inside and not self.shelf and not self.pay:
