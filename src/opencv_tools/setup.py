@@ -39,11 +39,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'publisherIMG = opencv_tools.PublisherIMGNode:main',
-            'publisherPNG = opencv_tools.PublisherPNGNode:main',
-            'publisherHumanVIDEO = opencv_tools.PublisherHumanVIDEONode:main',
+            'image_saver          = opencv_tools.image_saver:main',
+            'publisherHumanVIDEO  = opencv_tools.PublisherHumanVIDEONode:main',
             'publisherTomatoVIDEO = opencv_tools.PublisherTomatoVIDEONode:main',
-            'subscribeHumanVIDEO = opencv_tools.SubscribeHumanVIDEONode:main',
+            'subscribeHumanVIDEO  = opencv_tools.SubscribeHumanVIDEONode:main',
             'subscribeTomatoVIDEO = opencv_tools.SubscribeTomatoVIDEONode:main'
         ],
     },

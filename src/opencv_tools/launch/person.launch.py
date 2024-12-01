@@ -16,7 +16,7 @@ def generate_launch_description():
 
     device_arg = DeclareLaunchArgument(
         'device',
-        default_value='cuda:0',
+        default_value='cpu',
         description='Dispositivo para processamento (e.g., cuda:0, cpu)'
     )
 

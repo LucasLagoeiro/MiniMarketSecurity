@@ -11,7 +11,7 @@ class ImagePublisher(Node):
     self.publisher_ = self.create_publisher(Image, 'tomato_image_raw', 10)
     
 
-    self.cap = cv2.VideoCapture('src/opencv_tools/data/pickInplace.mp4')
+    self.cap = cv2.VideoCapture('src/opencv_tools/data/pickAndpay.mp4')
     video_fps = self.cap.get(cv2.CAP_PROP_FPS)
     self.get_logger().info(f'FPS original do vídeo: {video_fps}')
 
@@ -40,7 +40,7 @@ class ImagePublisher(Node):
       if self.last_frame is not None:
         self.get_logger().info('Vídeo terminou, publicando o último frame.')
         frame_resized = cv2.resize(self.last_frame, (1280, 720))
-        self.publisher_.publish(self.br.cv2_to_imgmsg(frame_resized))
+        self.publisher_.publish(self.br.cv2_to_imgmsg(self.last_frame))
       # self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
    
 def main(args=None):
