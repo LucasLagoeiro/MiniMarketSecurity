@@ -11,14 +11,14 @@ class ImageSaver(Node):
         # Substitua pelo seu tópico de imagem
         self.subscription = self.create_subscription(
             Image,
-            '/yolo/dbg_image_human',  # Nome do tópico
+            '/yolo/dbg_image_food',  # Nome do tópico
             self.listener_callback,
             10)
         self.bridge = CvBridge()
         self.frame_count = 0
         self.output_dir = "./frames"
         os.makedirs(self.output_dir, exist_ok=True)
-        self.get_logger().info("ImageSaver node initialized. Listening to /yolo/dbg_image_human")
+        self.get_logger().info("ImageSaver node initialized. Listening to the topic")
 
     def listener_callback(self, msg):
         try:

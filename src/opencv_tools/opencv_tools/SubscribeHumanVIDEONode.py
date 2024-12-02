@@ -57,7 +57,7 @@ class ImageSubscriber(Node):
     print(current_frame.shape)
     
     verde = (0,255,0)
-    # cv2.line(current_frame,(600,0),(600,current_frame.shape[1]),verde,3)
+    cv2.line(current_frame,(600,0),(600,current_frame.shape[1]),verde,3)
 
     cv2.imshow("camera", current_frame)
     cv2.waitKey(1)

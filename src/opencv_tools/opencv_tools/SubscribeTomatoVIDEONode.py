@@ -37,11 +37,11 @@ class ImageSubscriber(Node):
     current_frame = self.br.imgmsg_to_cv2(data)
 
 
-    # área pra passar o produto
-    cv2.rectangle(current_frame, (250, 450), (700, 970), verde, 5)
+    # # área pra passar o produto
+    # cv2.rectangle(current_frame, (250, 450), (700, 970), verde, 5)
 
-    # área onde o produto vai ficar
-    cv2.rectangle(current_frame, (600, 50), (900, 350), roxo, 5)
+    # # área onde o produto vai ficar
+    # cv2.rectangle(current_frame, (600, 50), (900, 350), roxo, 5)
 
 
     cv2.imshow("camera", current_frame)
